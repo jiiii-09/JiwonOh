@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'BookkGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkGothic-Lt.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BookkGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkGothic-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* ======================
+   GENERAL RESET & MOBILE SETTINGS
+   ====================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  width: 100%;
+  height: 100%;
+  touch-action: none; /* 모바일 터치 확대 방지 */
+  font-family: 'BookkGothic', sans-serif;
+}
+
+/* ======================
+   TEXT OUTLINE BASE STYLE
+   ====================== */
+/* 모든 오버레이 텍스트에 들어가는 흰색 두꺼운 테두리 */
+.outline-text {
+  color: #000000;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-shadow:
+    -3px -3px 0 #ffffff,
+     3px -3px 0 #ffffff,
+    -3px  3px 0 #ffffff,
+     3px  3px 0 #ffffff,
+     0px -3px 0 #ffffff,
+    -3px  0px 0 #ffffff,
+     3px  0px 0 #ffffff,
+     0px  3px 0 #ffffff;
+}
+
+/* ======================
+   LEFT OVERLAY (이름/직업)
+   ====================== */
+#overlay-left {
+  position: fixed;
+  top: 40px;
+  left: 28px;
+  z-index: 9999;
+}
+
+#overlay-left div {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/* 전체 이름 줄을 가로 배치 */
+.name-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;   /* 오지원과 Jiwon Oh 사이 간격 */
+}
+
+/* 오지원 (큰 글씨) */
+.big-kor {
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 1.0;
+  display: inline-block;
+}
+
+/* Jiwon Oh (옆에 붙는 작은 글씨) */
+.small-eng {
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 10px; /* 살짝 아래로 내려 자연스럽게 맞춤 */
+  display: inline-block;
+}
+
+
+/* Graphic Designer */
+.role {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 1.1;
+}
+
+/* ======================
+   RIGHT OVERLAY (연락처)
+   ====================== */
+#overlay-right {
+  position: fixed;
+  right: 28px;
+  bottom: 40px;
+
+  text-align: right;
+  z-index: 9999;
+}
+
+#overlay-right div {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/* 이메일 / 전화번호 / 웹사이트 */
+.contact {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* ======================
+   APPLY OUTLINE STYLE TO ALL OVERLAY TEXT
+   ====================== */
+#overlay-left div,
+#overlay-right div {
+  color: black;
+  text-shadow:
+    -3px -3px 0 #fff,
+     3px -3px 0 #fff,
+    -3px  3px 0 #fff,
+     3px  3px 0 #fff,
+     0px -3px 0 #fff,
+    -3px  0px 0 #fff,
+     3px  0px 0 #fff,
+     0px  3px 0 #fff;
+}
