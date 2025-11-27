@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
 
   <!-- iPhone 5s 전체화면 웹앱 설정 -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="apple-touch-icon" href="icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" href="style.css">
 
@@ -19,15 +19,54 @@
 
 <body>
 
-  <!-- 🔥 LEFT overlay -->
-  <div id="overlay-left">
-  <div class="name-line">
-    <span class="big-kor outline-text">오지원</span>
-    <span class="small-eng outline-text">Jiwon Oh</span>
-  </div>
+  <!-- 🔥 LEFT overlay - 이름 -->
+  <svg id="svg-name"
+       xmlns="http://www.w3.org/2000/svg"
+       width="500" height="90"
+       viewBox="0 0 500 90"
+       style="position:fixed; top:40px; left:28px; z-index:9999;">
 
-  <div class="role outline-text">Graphic Designer</div>
-</div>
+    <text
+          fill="black"
+          stroke="white"
+          stroke-width="6"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          paint-order="stroke"
+          font-family="BookkGothic"
+          font-weight="700">
+
+      <!-- 오지원 (48px) -->
+      <tspan x="0" y="60" font-size="48">오지원</tspan>
+
+      <!-- Jiwon Oh (28px) -->
+      <tspan dx="8" y="60" font-size="28">Jiwon Oh</tspan>
+
+    </text>
+  </svg>
+
+
+  <!-- 🔥 LEFT overlay - 직업 -->
+  <svg id="svg-role"
+       xmlns="http://www.w3.org/2000/svg"
+       width="500" height="70"
+       viewBox="0 0 500 70"
+       style="position:fixed; top:85px; left:28px; z-index:9999;">
+
+    <text x="0" y="50"
+          fill="black"
+          stroke="white"
+          stroke-width="5"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          paint-order="stroke"
+          font-family="BookkGothic"
+          font-size="28"
+          font-weight="700">
+      Graphic Designer
+    </text>
+
+  </svg>
 
 
   <!-- 🔥 RIGHT overlay -->
